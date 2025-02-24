@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "./bevellier.css";
+@import "./satoshi.css";
+
+@theme {
+  --font-sans: "Satoshi-Variable", "sans-serif";
+  --font-serif: "Bevellier-Variable", "serif";
+  --ease-fluid: cubic-bezier(0.3, 0, 0, 1);
+  --ease-snappy: cubic-bezier(0.2, 0, 0, 1); /* ... */
+
+  --color-n-bg: #f7f2f2;
+  --color-n-header-bg: #ede9e9;
+}
+
+@layer base {
+  * {
+    @apply font-sans;
+  }
+}
