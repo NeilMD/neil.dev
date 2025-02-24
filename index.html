@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body class="bg-n-bg">
     <header class="flex items-center p-8">
@@ -15,7 +19,7 @@
         >
           <li><a href="#all">All</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#portfolio">Projects</a></li>
         </ul>
       </nav>
       <span class="flex-1/3 flex justify-end"> Contact Me </span>
@@ -58,7 +62,9 @@
             >
               Go to Site
             </span>
-            <span class="absolute group-hover:relative"> -> </span>
+            <span class="absolute group-hover:relative">
+              <i class="fa-solid fa-arrow-right"></i>
+            </span>
           </div>
 
           <div class="absolute inset-0 h-full flex flex-col px-8 py-12">
@@ -69,8 +75,21 @@
         </div>
 
         <div
-          class="bg-white col-span-3 row-span-2 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+          class="group relative bg-white col-span-3 row-span-2 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
+          <div
+            id="button"
+            class="cursor-pointer absolute m-4 top-0 right-0 h-[40px] w-[40px] bg-white rounded-full flex justify-center items-center overflow-hidden group-hover:w-[150px] transition-all duration-400 ease-in-out"
+          >
+            <span
+              class="text-nowrap group-hover:inline group-hover:translate-x-0 transition-all duration-300 ease-in-out delay-75 transform -translate-x-full p-2"
+            >
+              Download Resume
+            </span>
+            <span class="absolute group-hover:hidden">
+              <i class="fa-solid fa-download"></i>
+            </span>
+          </div>
           <a target="_blank" href="./docs/[RESUME] CAN Ver 2.1.1.pdf">
             <div class="px-8 py-12">
               <div class="flex flex-col gap-8 h-full">
