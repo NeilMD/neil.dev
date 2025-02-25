@@ -43,7 +43,7 @@ const clear = () => {
     console.log(id);
     document.querySelector(id).classList.remove("active_nav");
   });
-  project.concat(about).forEach((id) => {
+  [...project, ...about].forEach((id) => {
     document.querySelector(id).classList.remove("inactive_card");
   });
 };
