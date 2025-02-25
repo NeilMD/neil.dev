@@ -1,15 +1,15 @@
 const bc_link = "https://neilmd.github.io/CPRG-309_Final/";
 const ns_link = "https://neilmd.github.io/CPRG_310_NEW_FINAL/";
 
-const about = ["#bc_card", "#ns_card"];
+const about = ["bc_card", "ns_card"];
 const project = [
-  "#exp_card",
-  "#links_card",
-  "#neil_card",
-  "#tech_card",
-  "#edu_card",
+  "exp_card",
+  "links_card",
+  "neil_card",
+  "tech_card",
+  "edu_card",
 ];
-const nav = ["#all_nav", "#about_nav", "#project_nav"];
+const nav = ["all_nav", "about_nav", "project_nav"];
 
 // Click handlers for cards
 document
@@ -45,14 +45,15 @@ const handleNavClick = (navItemId) => {
 
 const clear = () => {
   nav.forEach((id) => {
-    const navElement = document.querySelector(id);
+    const navElement = document.getElementById(id);
     if (navElement) {
       navElement.classList.remove("active_nav");
     }
   });
 
   [...project, ...about].forEach((id) => {
-    const cardElement = document.querySelector(id);
+    const cardElement = document.getElementById(id);
+    console.log(id);
     if (cardElement) {
       cardElement.classList.remove("inactive_card");
     }
@@ -61,7 +62,7 @@ const clear = () => {
 
 const blur = (arrId) => {
   arrId.forEach((id) => {
-    const cardElement = document.querySelector(id);
+    const cardElement = document.getElementById(id);
     if (cardElement) {
       cardElement.classList.add("inactive_card");
     }
