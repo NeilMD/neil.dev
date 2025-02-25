@@ -18,7 +18,7 @@
   }
 
   .inactive_card {
-    @apply grayscale-50 blur-xs;
+    @apply grayscale-75 blur-md;
   }
   .active_card {
     @apply grayscale-0 blur-none;
