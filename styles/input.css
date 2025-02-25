@@ -20,6 +20,7 @@
   .inactive_card {
     @apply grayscale-50 blur-xs;
   }
+
   .active_nav {
     @apply bg-white;
   }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,19 +20,22 @@
           class="flex gap-4 self-center px-4 py-2 bg-n-header-bg rounded-full"
         >
           <li
+            id="all_nav"
             class="active_nav py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out"
           >
-            <a href="#all">All</a>
+            <a>All</a>
           </li>
           <li
+            id="project_nav"
             class="py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out"
           >
-            <a href="#about">About</a>
+            <a href="#ns_card">Projects</a>
           </li>
           <li
+            id="about_nav"
             class="py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out"
           >
-            <a href="#portfolio">Projects</a>
+            <a href="#neil_card">About</a>
           </li>
         </ul>
       </nav>
@@ -43,7 +46,8 @@
         class="grid grid-cols-2 auto-rows-auto lg:grid-rows-[repeat(2,120px)_repeat(2,240px)] lg:grid-cols-[repeat(5,240px)] gap-6 mt-24"
       >
         <div
-          class="order-1 bg-amber-100 col-span-2 md:col-span-1 lg:col-span-1 lg:row-span-2 row-span-1 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-snappy hover:drop-shadow-sm"
+          id="exp_card"
+          class="active_card order-1 bg-amber-100 col-span-2 md:col-span-1 lg:col-span-1 lg:row-span-2 row-span-1 rounded-4xl px-8 py-12 drop-shadow-xs active_card transition-all duration-500 ease-in-out hover:drop-shadow-sm"
         >
           <div class="flex flex-col">
             <h2 class="text-8xl font-serif text-center font-medium">
@@ -53,6 +57,7 @@
           </div>
         </div>
         <div
+          id="links_card"
           class="order-3 md:order-2 lg:order-2 divide-x divide-violet-200 flex flex-row gap-3 align-middle bg-fuchsia-100 lg:col-span-3 md:col-span-1 col-span-2 row-span-1 lg:row-span-1 sm:row-span-1 rounded-4xl px-8 py-4 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
           <div class="flex flex-col w-full">
@@ -124,6 +129,7 @@
         </div>
 
         <div
+          id="neil_card"
           class="order-2 md:order-3 lg:order-4 group relative bg-white lg:col-span-3 col-span-2 row-span-2 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
           <div
@@ -163,6 +169,7 @@
           </a>
         </div>
         <div
+          id="tech_card"
           class="order-4 md:order-5 lg:order-5 relative bg-black min-h-[240px] text-white lg:col-span-1 col-span-2 row-span-2 rounded-4xl px-8 py-8 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
           <div class="hidden lg:flex flex-col">
@@ -303,6 +310,7 @@
           </div>
         </div>
         <div
+          id="edu_card"
           class="hidden md:order-6 lg:order-6 lg:block overflow-hidden bg-red-100 lg:col-span-2 sm:col-span-1 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
           <div class="flex flex-row h-full">
@@ -358,7 +366,7 @@
             <h2 class="font-serif text-3xl font-semibold">Beat Current</h2>
           </div>
           <img
-            class="-z-10 absolute bottom-[40px] lg:bottom-0 left-0 object-cover scale-175 lg:scale-125 group-hover:scale-163 md:group-hover:scale-100 transition duration-500 ease-in-out"
+            class="-z-10 absolute bottom-[40px] lg:bottom-0 left-0 object-cover scale-175 lg:scale-125 group-hover:scale-163 lg:group-hover:scale-100 transition duration-500 ease-in-out"
             height="240"
             width="580"
             src="./styles/img/beat-current.webp"
