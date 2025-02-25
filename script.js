@@ -9,47 +9,61 @@ const project = [
   "#tech_card",
   "#edu_card",
 ];
-
 const nav = ["#all_nav", "#about_nav", "#project_nav"];
 
-document.getElementById("bc_card").addEventListener("click", () => {
-  window.open(bc_link, "_blank");
+// Click handlers for cards
+document
+  .getElementById("bc_card")
+  .addEventListener("click", () => window.open(bc_link, "_blank"));
+document
+  .getElementById("ns_card")
+  .addEventListener("click", () => window.open(ns_link, "_blank"));
+
+// Click handlers for navigation
+const navHandlers = {
+  about_nav: about,
+  project_nav: project,
+  all_nav: [],
+};
+
+Object.keys(navHandlers).forEach((navItemId) => {
+  const navItem = document.getElementById(navItemId);
+  if (navItem) {
+    navItem.addEventListener("click", () => handleNavClick(navItemId));
+  }
 });
 
-document.getElementById("ns_card").addEventListener("click", () => {
-  window.open(ns_link, "_blank");
-});
-
-document.getElementById("about_nav").addEventListener("click", (el) => {
+const handleNavClick = (navItemId) => {
   clear();
-  document.getElementById("about_nav").classList.add("active_nav");
-  blur(about);
-});
+  const activeNavItem = document.getElementById(navItemId);
+  if (activeNavItem) {
+    activeNavItem.classList.add("active_nav");
+  }
 
-document.getElementById("project_nav").addEventListener("click", (el) => {
-  clear();
-  document.getElementById("project_nav").classList.add("active_nav");
-  blur(project);
-});
-
-document.getElementById("all_nav").addEventListener("click", (el) => {
-  clear();
-  document.getElementById("all_nav").classList.add("active_nav");
-  blur([]);
-});
+  blur(navHandlers[navItemId]);
+};
 
 const clear = () => {
   nav.forEach((id) => {
-    console.log(id);
-    document.querySelector(id).classList.remove("active_nav");
+    const navElement = document.querySelector(id);
+    if (navElement) {
+      navElement.classList.remove("active_nav");
+    }
   });
+
   [...project, ...about].forEach((id) => {
-    document.querySelector(id).classList.remove("inactive_card");
+    const cardElement = document.querySelector(id);
+    if (cardElement) {
+      cardElement.classList.remove("inactive_card");
+    }
   });
 };
 
 const blur = (arrId) => {
   arrId.forEach((id) => {
-    document.querySelector(id).classList.add("inactive_card");
+    const cardElement = document.querySelector(id);
+    if (cardElement) {
+      cardElement.classList.add("inactive_card");
+    }
   });
 };
