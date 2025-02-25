@@ -56,6 +56,7 @@ const clear = () => {
     console.log(id);
     if (cardElement) {
       cardElement.classList.remove("inactive_card");
+      cardElement.classList.add("active_card");
     }
   });
 };
@@ -65,6 +66,7 @@ const blur = (arrId) => {
     const cardElement = document.getElementById(id);
     if (cardElement) {
       cardElement.classList.add("inactive_card");
+      cardElement.classList.remove("active_card");
     }
   });
 };
