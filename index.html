@@ -9,10 +9,11 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
     />
+    <script src="./script.js" defer></script>
   </head>
   <body class="bg-n-bg">
     <header class="flex items-center p-8 fixed w-full z-10">
-      <span class="flex-1/3 justify-baseline flex">Neil </span>
+      <span class="hidden flex-1/3 justify-baseline md:flex">Neil </span>
       <nav class="flex-1/3 flex justify-center">
         <ul
           class="flex gap-4 self-center px-4 py-2 bg-n-header-bg rounded-full"
@@ -22,14 +23,14 @@
           <li><a href="#portfolio">Projects</a></li>
         </ul>
       </nav>
-      <span class="flex-1/3 flex justify-end"> Contact Me </span>
+      <span class="hidden md:flex flex-1/3 justify-end"> Contact Me </span>
     </header>
     <main class="px-8 flex justify-center">
       <div
-        class="grid grid-rows-[repeat(2,120px)_repeat(2,240px)] grid-cols-[repeat(5,240px)] gap-6 mt-24"
+        class="grid grid-cols-2 auto-rows-auto lg:grid-rows-[repeat(2,120px)_repeat(2,240px)] lg:grid-cols-[repeat(5,240px)] gap-6 mt-24"
       >
         <div
-          class="bg-amber-100 col-span-1 row-span-2 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-snappy hover:drop-shadow-sm"
+          class="order-1 bg-amber-100 col-span-2 md:col-span-1 lg:col-span-1 lg:row-span-2 row-span-1 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-snappy hover:drop-shadow-sm"
         >
           <div class="flex flex-col">
             <h2 class="text-8xl font-serif text-center font-medium">
@@ -39,33 +40,49 @@
           </div>
         </div>
         <div
-          class="divide-x divide-violet-200 flex flex-row gap-3 align-middle bg-fuchsia-100 col-span-3 row-span-1 rounded-4xl px-8 py-4 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+          class="order-3 md:order-2 lg:order-2 divide-x divide-violet-200 flex flex-row gap-3 align-middle bg-fuchsia-100 lg:col-span-3 md:col-span-1 col-span-2 row-span-1 lg:row-span-1 sm:row-span-1 rounded-4xl px-8 py-4 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
           <div class="flex flex-col w-full">
-            <h2 class="font-serif font-medium text-2xl">Check out my Links:</h2>
-            <div class="flex gap-4 text-gray-700 w-full h-full items-center">
-              <a class="hover:text-blue-900  transition duration-500 ease-in-out " href="https://github.com/NeilMD" target="_blank">
-                <span ></span>
-                 Github <i class="fa-brands fa-github"></i></span
+            <h2 class="hidden lg:block font-serif font-medium text-2xl">
+              Check out my Links:
+            </h2>
+            <div
+              class="flex md:flex-col lg:flex-row gap-4 text-black-700 w-full h-full items-center text-md md:text-xl justify-center"
+            >
+              <a
+                class="hover:text-blue-900 transition duration-500 ease-in-out px-6 py-1 bg-white rounded-4xl md:w-full md:text-center"
+                href="https://github.com/NeilMD"
+                target="_blank"
+              >
+                <span class="hidden md:inline">Github</span>
+                <i class="fa-brands fa-github"></i
               ></a>
 
-              <a class="hover:text-blue-900 transition duration-500 ease-in-out " href="https://www.linkedin.com/in/neil-capistrano/" target="_blank">
-                <span ></span>
-                 Linkedin <i class="fa-brands fa-linkedin"></i></span
+              <a
+                class="hover:text-blue-900 transition duration-500 ease-in-out px-6 py-1 bg-white rounded-4xl md:w-full md:text-center"
+                href="https://www.linkedin.com/in/neil-capistrano/"
+                target="_blank"
+              >
+                <span class="hidden md:inline">Linkedin</span
+                ><i class="fa-brands fa-linkedin"></i
               ></a>
 
-              <a class="hover:text-blue-900 transition duration-500 ease-in-out " href="mailto:neil.capistrano2007.ca@gmail.com" target="_blank">
-                <span ></span>
-                 Google Mail <i class="fa-brands fa-google"></i></span
+              <a
+                class="hover:text-blue-900 transition duration-500 ease-in-out px-6 py-1 bg-white rounded-4xl md:w-full md:text-center"
+                href="mailto:neil.capistrano2007.ca@gmail.com"
+                target="_blank"
+              >
+                <span class="hidden md:inline">Gmail</span>
+                <i class="fa-brands fa-google"></i
               ></a>
             </div>
           </div>
         </div>
         <div
-          class="cursor-pointer group relative overflow-hidden bg-indigo-100 col-span-1 row-span-3 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+          class="cursor-pointer h-[240px] lg:h-full group relative overflow-hidden bg-indigo-100 order-6 md:order-7 lg:order-3 col-span-2 md:col-span-1 lg:col-span-1 row-span-3 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
           <img
-            class="absolute inset-0 object-cover scale-125 group-hover:scale-100 transition duration-500 ease-in-out"
+            class="absolute bottom-[-200px] right-[-10px] lg:inset-0 object-cover scale-90 lg:scale-125 group-hover:scale-100 transition duration-500 ease-in-out"
             height="580"
             width="240"
             src="./styles/img/night_sparrows.webp"
@@ -85,7 +102,7 @@
             </span>
           </div>
 
-          <div class="absolute inset-0 h-full flex flex-col px-8 py-12">
+          <div class="absolute inset-0 h-full flex flex-col px-8 py-8 lg:py-12">
             <h2 class="font-serif text-3xl font-semibold">
               Night Sparrows Production
             </h2>
@@ -93,7 +110,7 @@
         </div>
 
         <div
-          class="group relative bg-white col-span-3 row-span-2 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+          class="order-2 md:order-3 lg:order-4 group relative bg-white lg:col-span-3 col-span-2 row-span-2 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
           <div
             id="button"
@@ -132,69 +149,182 @@
           </a>
         </div>
         <div
-          class="relative bg-black text-white col-span-1 row-span-2 rounded-4xl px-8 py-8 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+          class="order-4 md:order-5 lg:order-5 relative bg-black min-h-[240px] text-white lg:col-span-1 col-span-2 row-span-2 rounded-4xl px-8 py-8 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
-          
-          <div class="flex flex-col  ">
-            <h2 class="absolute bottom-0 font-serif font-medium text-md mb-5 text-clip">
+          <div class="hidden lg:flex flex-col">
+            <h2
+              class="absolute bottom-0 font-serif font-medium text-md mb-5 text-clip"
+            >
               <i class="fa-solid fa-layer-group mr-3"></i>Tech Stack
             </h2>
-            <div class="group cursor-pointer flex-[40%] flex flex-col text-left gap-2 mb-2">
-              <b class="uppercase pr-2 py-1 w-full border-b border-b-white text-3xl font-extralight text-left">Backend</b>
-              <div class="text-sm gap-1 flex flex-wrap max-h-0 overflow-hidden group-hover:max-h-[140px] transition-all duration-500 ease-in-out">
-                <span class="p-1 w-fit border border-white rounded-md">Javascript</span>
-                <span class="p-1 w-fit border border-white rounded-md">Java</span>
-                <span class="p-1 w-fit border border-white rounded-md">Python</span>
-                <span class="p-1 w-fit border border-white rounded-md">ExpressJS</span>
-                <span class="p-1 w-fit border border-white rounded-md">NodeJS</span>
-                <span class="p-1 w-fit border border-white rounded-md">PostgreSQL</span>
-                <span class="p-1 w-fit border border-white rounded-md">MySQL</span>
-                <span class="p-1 w-fit border border-white rounded-md">Bash Scripting</span>
+            <div
+              class="group cursor-pointer flex-[40%] flex flex-col text-left gap-2 mb-2"
+            >
+              <b
+                class="uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left"
+                >Backend</b
+              >
+              <div
+                class="text-sm gap-1 flex flex-wrap max-h-0 lg:overflow-hidden group-hover:max-h-[140px] transition-all duration-500 ease-in-out"
+              >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >Javascript</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >Java</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >Python</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >ExpressJS</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >NodeJS</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >PostgreSQL</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >MySQL</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >Bash Scripting</span
+                >
               </div>
             </div>
-            <div class="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2">
-              <b class="uppercase pr-2 py-1 w-full border-b border-b-white text-3xl font-extralight text-left">Frontend</b>
-              <div class="text-sm gap-1 flex flex-wrap max-h-0 overflow-hidden group-hover:max-h-[140px] transition-all duration-500 ease-in-out">
-                <span class="p-1 w-fit border border-white rounded-md">React</span>
-                <span class="  p-1 w-fit border border-white rounded-md">HTML5</span>
-                <span class=" p-1 w-fit border border-white rounded-md">CSS3</span>
-                <span class=" p-1 w-fit border border-white rounded-md">JQuery</span>
-                <span class=" p-1 w-fit border border-white rounded-md">Tailwind</span>
+            <div
+              class="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2"
+            >
+              <b
+                class="uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left"
+                >Frontend</b
+              >
+              <div
+                class="text-sm gap-1 flex flex-wrap max-h-0 lg:overflow-hidden group-hover:max-h-[140px] transition-all duration-500 ease-in-out"
+              >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >React</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >HTML5</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >CSS3</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >JQuery</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >Tailwind</span
+                >
               </div>
             </div>
-            
-            <div class="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2">
-              <b class="uppercase pr-2 py-1 w-full border-b border-b-white text-3xl font-extralight text-left">Testing</b>
-              <div class="text-sm gap-1 flex flex-wrap max-h-0 overflow-hidden group-hover:max-h-[140px] transition-all duration-500 ease-in-out">
-                <span class="p-1 w-fit border border-white rounded-md">JsUnit</span>
-                <span class="  p-1 w-fit border border-white rounded-md">Junit</span>
-                <span class=" p-1 w-fit border border-white rounded-md">JMeter</span>
-                <span class=" p-1 w-fit border border-white rounded-md">Selenium</span>
+
+            <div
+              class="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2"
+            >
+              <b
+                class="uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left"
+                >Testing</b
+              >
+              <div
+                class="text-sm gap-1 flex flex-wrap max-h-0 lg:overflow-hidden group-hover:max-h-[140px] transition-all duration-500 ease-in-out"
+              >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >JsUnit</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >Junit</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >JMeter</span
+                >
+                <span class="p-1 w-fit border border-white rounded-md"
+                  >Selenium</span
+                >
               </div>
             </div>
           </div>
+
+          <div
+            class="lg:hidden flex flex-wrap gap-x-1 gap-y-2 md:gap-x-3 md:gap-y-3 mb-5"
+          >
+            <h2
+              class="absolute bottom-0 font-serif font-medium text-md mb-5 text-clip"
+            >
+              <i class="fa-solid fa-layer-group mr-3"></i>Tech Stack
+            </h2>
+
+            <span class="p-1 w-fit border border-white rounded-md"
+              >Javascript</span
+            >
+            <span class="p-1 w-fit border border-white rounded-md">Java</span>
+            <span class="p-1 w-fit border border-white rounded-md">Python</span>
+            <span class="p-1 w-fit border border-white rounded-md"
+              >ExpressJS</span
+            >
+            <span class="p-1 w-fit border border-white rounded-md">NodeJS</span>
+            <span class="p-1 w-fit border border-white rounded-md"
+              >PostgreSQL</span
+            >
+            <span class="p-1 w-fit border border-white rounded-md">MySQL</span>
+            <span class="p-1 w-fit border border-white rounded-md"
+              >Bash Scripting</span
+            >
+            <span class="p-1 w-fit border border-white rounded-md">React</span>
+            <span class="p-1 w-fit border border-white rounded-md">HTML5</span>
+            <span class="p-1 w-fit border border-white rounded-md">CSS3</span>
+            <span class="p-1 w-fit border border-white rounded-md">JQuery</span>
+            <span class="p-1 w-fit border border-white rounded-md"
+              >Tailwind</span
+            >
+
+            <span class="p-1 w-fit border border-white rounded-md">JsUnit</span>
+            <span class="p-1 w-fit border border-white rounded-md">Junit</span>
+            <span class="p-1 w-fit border border-white rounded-md">JMeter</span>
+            <span class="p-1 w-fit border border-white rounded-md"
+              >Selenium</span
+            >
+          </div>
         </div>
         <div
-          class="overflow-hidden bg-red-100 col-span-2 rounded-4xl  drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+          class="hidden md:order-6 lg:order-6 lg:block overflow-hidden bg-red-100 lg:col-span-2 sm:col-span-1 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
-          <div class="flex flex-row h-full ">
-            <div class="flex-1/2 relative border-r border-r-black h-full px-8 py-8 flex flex-col ">
-              <h2 class="font-serif font-medium text-2xl text-center mb-4">April 2025 </h2>
-              <span class="text-sm text-center mb-2 font-medium">Diploma in Web Design and Development Major</span>
-              <span class="text-xs text-center font-light"> Southern Alberta Institute of Technology</span>
-              <span class="text-xs text-center font-extralight"> Calgary, AB, Canada</span>
+          <div class="flex flex-row h-full">
+            <div class="flex-1/2 relative h-full px-8 py-8 flex flex-col">
+              <h2 class="font-serif font-medium text-2xl text-center mb-4">
+                April 2025
+              </h2>
+              <span class="text-sm text-center mb-2 font-medium"
+                >Diploma in Web Design and Development Major</span
+              >
+              <span class="text-xs text-center font-light">
+                Southern Alberta Institute of Technology</span
+              >
+              <span class="text-xs text-center font-extralight">
+                Calgary, AB, Canada</span
+              >
             </div>
-            
+
             <div class="flex-1/2 bg-green-100 h-full px-8 py-8 flex flex-col">
-              <h2 class="font-serif font-medium text-2xl text-center mb-4">August 2018 </h2>
-              <span class="text-sm text-center mb-2 font-medium">Bachelor's Degree in Information Technology</span>
-              <span class="text-xs text-center font-light"> De La Salle University - Manila</span>
-              <span class="text-xs text-center font-extralight"> Manila, Philippines</span>
+              <h2 class="font-serif font-medium text-2xl text-center mb-4">
+                August 2018
+              </h2>
+              <span class="text-sm text-center mb-2 font-medium"
+                >Bachelor's Degree in Information Technology</span
+              >
+              <span class="text-xs text-center font-light">
+                De La Salle University - Manila</span
+              >
+              <span class="text-xs text-center font-extralight">
+                Manila, Philippines</span
+              >
             </div>
           </div>
         </div>
         <div
-          class="group relative overflow-hidden bg-teal-100 col-span-2 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+          class="group relative overflow-hidden h-[240px] bg-teal-100 lg:col-span-2 md:col-span-1 col-span-2 order-5 md:order-7 lg:order-7 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
         >
           <div
             id="button"
@@ -213,7 +343,7 @@
             <h2 class="font-serif text-3xl font-semibold">Beat Current</h2>
           </div>
           <img
-            class="absolute top-[40px] left-0 object-cover scale-125 group-hover:scale-100 transition duration-500 ease-in-out"
+            class="absolute bottom-[40px] lg:bottom-0 left-0 object-cover scale-175 lg:scale-125 group-hover:scale-100 transition duration-500 ease-in-out"
             height="240"
             width="580"
             src="./styles/img/beat-current.webp"
