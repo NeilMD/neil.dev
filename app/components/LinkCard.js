@@ -24,7 +24,12 @@ const LinkCard = ({ headerValue }) => {
               target="_blank"
             >
               <span className="hidden mr-1 md:inline">Github</span>
-              <FontAwesomeIcon icon={faGithub} />
+              <FontAwesomeIcon
+                className="inline"
+                height={20}
+                width={20}
+                icon={faGithub}
+              />
             </a>
           </div>
 
@@ -36,7 +41,12 @@ const LinkCard = ({ headerValue }) => {
               target="_blank"
             >
               <span className="hidden mr-2 md:inline">Linkedin</span>
-              <FontAwesomeIcon icon={faLinkedin} />
+              <FontAwesomeIcon
+                className="inline"
+                height={20}
+                width={20}
+                icon={faLinkedin}
+              />
             </a>
           </div>
           <div className="flex relative justify-center group px-2 md:px-6 py-1 bg-white rounded-4xl md:w-full md:text-center">
@@ -47,7 +57,12 @@ const LinkCard = ({ headerValue }) => {
               target="_blank"
             >
               <span className="hidden mr-1 md:inline">Gmail</span>
-              <FontAwesomeIcon icon={faGoogle} />
+              <FontAwesomeIcon
+                className="inline"
+                height={20}
+                width={20}
+                icon={faGoogle}
+              />
             </a>
           </div>
         </div>
