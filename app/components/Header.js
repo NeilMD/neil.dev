@@ -1,4 +1,5 @@
-const Header = () => {
+"use client";
+const Header = ({ headerValue, setHeaderValue }) => {
   return (
     <header className="flex items-center p-8 fixed w-full z-10">
       <span className="hidden flex-1/3 font-semibold text-lg justify-baseline md:flex">
@@ -9,19 +10,34 @@ const Header = () => {
           <div className="-z-10 absolute inset-0 opacity-90 bg-n-bg rounded-full"></div>
           <li
             id="all_nav"
-            className="active_nav py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out"
+            className={`py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out ${
+              headerValue === 0 ? "active_nav" : ""
+            }`}
+            onClick={() => {
+              setHeaderValue(0);
+            }}
           >
             <a href="#exp_card">All</a>
           </li>
           <li
             id="project_nav"
-            className="py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out"
+            className={`py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out ${
+              headerValue === 1 ? "active_nav" : ""
+            }`}
+            onClick={() => {
+              setHeaderValue(1);
+            }}
           >
             <a href="#ns_card">Projects</a>
           </li>
           <li
             id="about_nav"
-            className="py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out"
+            className={`py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out ${
+              headerValue === 2 ? "active_nav" : ""
+            }`}
+            onClick={() => {
+              setHeaderValue(2);
+            }}
           >
             <a href="#neil_card">About</a>
           </li>

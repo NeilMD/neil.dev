@@ -1,8 +1,15 @@
-const LinkCard = () => {
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faGithub,
+  faLinkedin,
+  faGoogle,
+} from "@fortawesome/free-brands-svg-icons";
+const LinkCard = ({ headerValue }) => {
   return (
     <div
       id="links_card"
-      className="order-3 md:order-2 lg:order-2 flex flex-row gap-3 align-middle bg-slate-100 lg:col-span-3 md:col-span-1 col-span-2 row-span-1 lg:row-span-1 sm:row-span-1 rounded-4xl px-8 py-4 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+      className={`order-3 md:order-2 lg:order-2 flex flex-row gap-3 align-middle bg-slate-100 lg:col-span-3 md:col-span-1 col-span-2 row-span-1 lg:row-span-1 sm:row-span-1 rounded-4xl px-8 py-4 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm
+        ${headerValue === 1 ? "inactive_card" : "active_card"}`}
     >
       <div className="flex flex-col w-full">
         <h2 className="hidden lg:block font-serif font-medium text-2xl">
@@ -17,7 +24,7 @@ const LinkCard = () => {
               target="_blank"
             >
               <span className="hidden mr-1 md:inline">Github</span>
-              <i className="fa-brands fa-github"></i>
+              <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
 
@@ -29,7 +36,7 @@ const LinkCard = () => {
               target="_blank"
             >
               <span className="hidden mr-2 md:inline">Linkedin</span>
-              <i className="fa-brands fa-linkedin"></i>
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </div>
           <div className="flex relative justify-center group px-2 md:px-6 py-1 bg-white rounded-4xl md:w-full md:text-center">
@@ -40,7 +47,7 @@ const LinkCard = () => {
               target="_blank"
             >
               <span className="hidden mr-1 md:inline">Gmail</span>
-              <i className="fa-brands fa-google"></i>
+              <FontAwesomeIcon icon={faGoogle} />
             </a>
           </div>
         </div>

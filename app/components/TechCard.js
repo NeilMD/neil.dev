@@ -1,8 +1,9 @@
-const TechCard = () => {
+const TechCard = ({ headerValue }) => {
   return (
     <div
       id="tech_card"
-      className="order-4 md:order-5 lg:order-5 relative bg-stone-800 min-h-[240px] text-white lg:col-span-1 col-span-2 row-span-2 rounded-4xl px-8 py-8 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+      className={`order-4 md:order-5 lg:order-5 relative bg-stone-800 min-h-[240px] text-white lg:col-span-1 col-span-2 row-span-2 rounded-4xl px-8 py-8 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm
+        ${headerValue === 1 ? "inactive_card" : "active_card"}`}
     >
       <div className="hidden lg:flex flex-col">
         <h2 className="absolute bottom-0 font-serif font-medium text-md mb-5 text-clip">

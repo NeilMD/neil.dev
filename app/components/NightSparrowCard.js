@@ -1,8 +1,21 @@
-const NightSparrowCard = () => {
+"use client";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+const NightSparrowCard = ({ headerValue }) => {
+  const handleClick = () => {
+    console.log("click");
+    window.open(
+      "https://neilmd.github.io/CPRG_310_NEW_FINAL/",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
   return (
     <div
       id="ns_card"
-      className="cursor-pointer h-[240px] lg:h-full group relative overflow-hidden bg-indigo-100 order-6 md:order-7 lg:order-3 col-span-2 md:col-span-1 lg:col-span-1 row-span-3 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+      className={`cursor-pointer h-[240px] lg:h-full group relative overflow-hidden bg-indigo-100 order-6 md:order-7 lg:order-3 col-span-2 md:col-span-1 lg:col-span-1 row-span-3 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm
+        ${headerValue === 2 ? "inactive_card" : "active_card"}`}
+      onClick={handleClick}
     >
       <img
         className="absolute bottom-[-200px] right-[-10px] lg:inset-0 object-cover scale-90 lg:scale-125 group-hover:scale-100 transition duration-500 ease-in-out"
@@ -19,7 +32,7 @@ const NightSparrowCard = () => {
           Go to Site
         </span>
         <span className="absolute group-hover:hidden">
-          <i className="fa-solid fa-arrow-right"></i>
+          <FontAwesomeIcon icon={faArrowRight} />
         </span>
       </div>
 

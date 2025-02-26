@@ -1,8 +1,22 @@
-const BeatCurrent = () => {
+"use client";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
+const BeatCurrent = ({ headerValue }) => {
+  const handleClick = () => {
+    console.log("click");
+    window.open(
+      "https://neilmd.github.io/CPRG-309_Final/",
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <div
       id="bc_card"
-      className="cursor-pointer group relative overflow-hidden h-[240px] bg-teal-100 lg:col-span-2 md:col-span-1 col-span-2 order-5 md:order-7 lg:order-7 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm"
+      className={`cursor-pointer group relative overflow-hidden h-[240px] bg-teal-100 lg:col-span-2 md:col-span-1 col-span-2 order-5 md:order-7 lg:order-7 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm 
+        ${headerValue === 2 ? "inactive_card" : "active_card"}`}
+      onClick={handleClick}
     >
       <div
         id="button"
@@ -12,7 +26,7 @@ const BeatCurrent = () => {
           Go to Site
         </span>
         <span className="absolute group-hover:hidden">
-          <i className="fa-solid fa-arrow-right"></i>
+          <FontAwesomeIcon icon={faArrowRight} />
         </span>
       </div>
       <div className="absolute inset-0 h-full flex flex-col px-8 py-8">
