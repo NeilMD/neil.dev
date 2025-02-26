@@ -6,7 +6,7 @@ const Header = () => {
       </span>
       <nav className="flex-1/3 flex justify-center opacity-65">
         <ul className="relative flex gap-4 self-center px-4 py-2 bg-transparent rounded-full">
-          <div className="-z-10 absolute inset-0 opacity-85 bg-n-bg blur-xs rounded-full"></div>
+          <div className="-z-10 absolute inset-0 opacity-90 bg-n-bg rounded-full"></div>
           <li
             id="all_nav"
             className="active_nav py-1 px-4 rounded-2xl hover:bg-white transition duration-500 ease-in-out"
