@@ -8,7 +8,7 @@ const LinkCard = ({ headerValue }) => {
   const cardVariants = {
     base: "order-3 md:order-2 lg:order-2 flex flex-row gap-3 align-middle bg-slate-100 lg:col-span-3 md:col-span-1 col-span-2 row-span-1 lg:row-span-1 sm:row-span-1 rounded-4xl px-8 py-4",
     active:
-      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm",
+      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm active_card",
     inactive: "inactive_card",
   };
   return (

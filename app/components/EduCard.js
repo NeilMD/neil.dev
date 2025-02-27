@@ -2,7 +2,7 @@ const EduCard = ({ headerValue }) => {
   const cardVariants = {
     base: "hidden md:order-6 lg:order-6 lg:block overflow-hidden bg-red-100 lg:col-span-2 sm:col-span-1 rounded-4xl",
     active:
-      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm",
+      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm active_card",
     inactive: "inactive_card",
   };
 

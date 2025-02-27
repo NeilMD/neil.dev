@@ -5,7 +5,7 @@ const TechCard = ({ headerValue }) => {
   const cardVariants = {
     base: "order-4 md:order-5 lg:order-5 relative bg-stone-800 min-h-[240px] text-white lg:col-span-1 col-span-2 row-span-2 rounded-4xl px-8 py-8",
     active:
-      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-lg",
+      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-lg active_card",
     inactive: "inactive_card",
   };
 
