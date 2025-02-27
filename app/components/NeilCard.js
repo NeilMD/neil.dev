@@ -16,7 +16,7 @@ const NeilCard = ({ headerValue }) => {
   const cardVariants = {
     base: "cursor-pointer order-2 md:order-3 lg:order-4 group relative bg-white lg:col-span-3 col-span-2 row-span-2 rounded-4xl",
     active:
-      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm active_card",
+      "active_card drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm",
     inactive: "inactive_card",
   };
   return (
