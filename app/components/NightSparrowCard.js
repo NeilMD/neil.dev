@@ -21,7 +21,7 @@ const NightSparrowCard = ({ headerValue }) => {
         className="absolute bottom-[-200px] right-[-10px] lg:inset-0 object-cover scale-90 lg:scale-125 group-hover:scale-100 transition duration-500 ease-in-out"
         height="580"
         width="240"
-        src="/neil.dev/img/night_sparrows.webp"
+        src="/img/night_sparrows.webp"
       />
 
       <div
