@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
+
 const TechCard = ({ headerValue }) => {
   return (
     <div
@@ -7,7 +10,13 @@ const TechCard = ({ headerValue }) => {
     >
       <div className="hidden lg:flex flex-col">
         <h2 className="absolute bottom-0 font-serif font-medium text-md mb-5 text-clip">
-          <i className="fa-solid fa-layer-group mr-3"></i>Tech Stack
+          <FontAwesomeIcon
+            height={16}
+            width={16}
+            className="inline mr-1"
+            icon={faLayerGroup}
+          />
+          Tech Stack
         </h2>
         <div className="group cursor-pointer flex-[40%] flex flex-col text-left gap-2 mb-2">
           <b className="uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left">
@@ -52,7 +61,13 @@ const TechCard = ({ headerValue }) => {
 
       <div className="lg:hidden flex flex-wrap gap-x-1 gap-y-2 md:gap-x-3 md:gap-y-3 mb-5">
         <h2 className="absolute bottom-0 font-serif font-medium text-md mb-5 text-clip">
-          <i className="fa-solid fa-layer-group mr-3"></i>Tech Stack
+          <FontAwesomeIcon
+            height={16}
+            width={16}
+            className="inline mr-1"
+            icon={faLayerGroup}
+          />
+          Tech Stack
         </h2>
 
         <span className="p-1 w-fit rounded-md">Javascript</span>
