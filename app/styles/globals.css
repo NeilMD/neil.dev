@@ -18,10 +18,10 @@
   }
 
   .inactive_card {
-    @apply grayscale-75 blur-md;
+    @apply grayscale-75 blur-md pointer-events-none;
   }
   .active_card {
-    @apply grayscale-0 blur-none;
+    @apply grayscale-0 blur-none pointer-events-auto;
   }
 
   .active_nav {

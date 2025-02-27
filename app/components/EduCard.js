@@ -1,9 +1,16 @@
 const EduCard = ({ headerValue }) => {
+  const cardVariants = {
+    base: "hidden md:order-6 lg:order-6 lg:block overflow-hidden bg-red-100 lg:col-span-2 sm:col-span-1 rounded-4xl",
+    active:
+      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm",
+    inactive: "inactive_card",
+  };
+
   return (
     <div
       id="edu_card"
-      className={`hidden md:order-6 lg:order-6 lg:block overflow-hidden bg-red-100 lg:col-span-2 sm:col-span-1 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm
-        ${headerValue === 1 ? "inactive_card" : "active_card"}`}
+      className={` ${cardVariants.base}
+        ${headerValue === 1 ? cardVariants.inactive : cardVariants.active}`}
     >
       <div className="flex flex-row h-full">
         <div className="flex-1/2 relative h-full px-8 py-8 flex flex-col">

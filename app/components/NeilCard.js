@@ -13,11 +13,17 @@ const NeilCard = ({ headerValue }) => {
     document.body.removeChild(link);
   };
 
+  const cardVariants = {
+    base: "cursor-pointer order-2 md:order-3 lg:order-4 group relative bg-white lg:col-span-3 col-span-2 row-span-2 rounded-4xl",
+    active:
+      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm",
+    inactive: "inactive_card",
+  };
   return (
     <div
       id="neil_card"
-      className={`cursor-pointer order-2 md:order-3 lg:order-4 group relative bg-white lg:col-span-3 col-span-2 row-span-2 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm
-        ${headerValue === 1 ? "inactive_card" : "active_card"}`}
+      className={`${cardVariants.base}
+        ${headerValue === 1 ? cardVariants.inactive : cardVariants.active}`}
       onClick={downloadResume}
     >
       <div

@@ -2,11 +2,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 
 const TechCard = ({ headerValue }) => {
+  const cardVariants = {
+    base: "order-4 md:order-5 lg:order-5 relative bg-stone-800 min-h-[240px] text-white lg:col-span-1 col-span-2 row-span-2 rounded-4xl px-8 py-8",
+    active:
+      "drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-lg",
+    inactive: "inactive_card",
+  };
+
   return (
     <div
       id="tech_card"
-      className={`order-4 md:order-5 lg:order-5 relative bg-stone-800 min-h-[240px] text-white lg:col-span-1 col-span-2 row-span-2 rounded-4xl px-8 py-8 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm
-        ${headerValue === 1 ? "inactive_card" : "active_card"}`}
+      className={`${cardVariants.base}
+        ${headerValue === 1 ? cardVariants.inactive : cardVariants.active}`}
     >
       <div className="hidden lg:flex flex-col">
         <h2 className="absolute bottom-0 font-serif font-medium text-md mb-5 text-clip">
