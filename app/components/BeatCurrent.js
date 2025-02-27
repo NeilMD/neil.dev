@@ -11,11 +11,18 @@ const BeatCurrent = ({ headerValue }) => {
     );
   };
 
+  const cardVariants = {
+    base: "relative overflow-hidden h-[240px] bg-teal-100 lg:col-span-2 md:col-span-1 col-span-2 order-5 md:order-7 lg:order-7 rounded-4xl px-8 py-12",
+    active:
+      "cursor-pointer group drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm",
+    inactive: "inactive_card",
+  };
+
   return (
     <div
       id="bc_card"
-      className={`cursor-pointer group relative overflow-hidden h-[240px] bg-teal-100 lg:col-span-2 md:col-span-1 col-span-2 order-5 md:order-7 lg:order-7 rounded-4xl px-8 py-12 drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm 
-        ${headerValue === 2 ? "inactive_card" : "active_card"}`}
+      className={`${cardVariants.base} 
+        ${headerValue === 2 ? cardVariants.inactive : cardVariants.active}`}
       onClick={handleClick}
     >
       <div
