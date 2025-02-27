@@ -6,7 +6,7 @@ const NeilCard = ({ headerValue }) => {
   const downloadResume = (e) => {
     e.preventDefault();
     const link = document.createElement("a");
-    link.href = "/docs/[RESUME] CAN Ver 2.1.1.pdf";
+    link.href = "/neil.dev/docs/[RESUME] CAN Ver 2.1.1.pdf";
     link.download = "NeilCapistrano_Resume.pdf";
     document.body.appendChild(link);
     link.click();
