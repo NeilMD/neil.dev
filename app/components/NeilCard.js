@@ -16,7 +16,7 @@ const NeilCard = ({ headerValue }) => {
   return (
     <div
       id="neil_card"
-      className={`order-2 md:order-3 lg:order-4 group relative bg-white lg:col-span-3 col-span-2 row-span-2 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm
+      className={`cursor-pointer order-2 md:order-3 lg:order-4 group relative bg-white lg:col-span-3 col-span-2 row-span-2 rounded-4xl drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm
         ${headerValue === 1 ? "inactive_card" : "active_card"}`}
       onClick={downloadResume}
     >
