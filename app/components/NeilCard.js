@@ -34,7 +34,10 @@ const NeilCard = ({ headerValue }) => {
 
       <div className="px-8 py-12">
         <div className="flex flex-col gap-8 h-full">
-          <img className="w-[100px]" src="./img/neil_programming.webp" />
+          <img
+            className="w-[100px]"
+            src="/neil.dev/img/neil_programming.webp"
+          />
           <div className="text-2xl font-extralight">
             I'm
             <span className="font-serif text-3xl font-semibold">Neil</span>, a

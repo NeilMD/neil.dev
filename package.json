@@ -21,7 +21,7 @@
     "postcss": "^8",
     "tailwindcss": "^4.0.9"
   },
-  "homepage": "https://neilmd.github.io/neil.dev",
+  "homepage": "https://neilmd.github.io/neil.dev/",
   "private": true,
   "scripts": {
     "dev": "next dev",
