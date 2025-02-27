@@ -1,3 +1,6 @@
+"use client";
+
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLayerGroup } from "@fortawesome/free-solid-svg-icons";
 
@@ -7,6 +10,21 @@ const TechCard = ({ headerValue }) => {
     active:
       "active_card drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-lg",
     inactive: "inactive_card",
+  };
+  const stackVariants = {
+    open: "max-h-[140px]",
+    closed: "max-h-0",
+  };
+  const [open, setOpen] = useState(0);
+
+  const toggleOpen = (val) => {
+    setOpen((prevState) => {
+      // If the previous state is not the same as the current value, set it to the new value
+      if (prevState !== val) return val;
+
+      // If the previous state is 1, 2, or 3, reset to 0
+      return prevState > 0 ? 0 : val;
+    });
   };
 
   return (
@@ -25,11 +43,20 @@ const TechCard = ({ headerValue }) => {
           />
           Tech Stack
         </h2>
-        <div className="group cursor-pointer flex-[40%] flex flex-col text-left gap-2 mb-2">
-          <b className="uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left">
+        <div
+          className="group cursor-pointer flex-[40%] flex flex-col text-left gap-2 mb-2"
+          onMouseEnter={() => {
+            toggleOpen(1);
+          }}
+        >
+          <b className="cursor-pointer uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left">
             Backend
           </b>
-          <div className="text-sm gap-1 flex flex-wrap max-h-0 lg:overflow-hidden group-hover:max-h-[140px] transition-all duration-500 ease-in-out">
+          <div
+            className={`text-sm gap-1 flex flex-wrap lg:overflow-hidden  transition-all duration-500 ease-in-out ${
+              open === 1 ? stackVariants.open : stackVariants.closed
+            }`}
+          >
             <span className="p-1 w-fit rounded-md">Javascript</span>
             <span className="p-1 w-fit rounded-md">Java</span>
             <span className="p-1 w-fit rounded-md">Python</span>
@@ -40,11 +67,20 @@ const TechCard = ({ headerValue }) => {
             <span className="p-1 w-fit rounded-md">Bash Scripting</span>
           </div>
         </div>
-        <div className="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2">
-          <b className="uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left">
+        <div
+          className="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2"
+          onMouseEnter={() => {
+            toggleOpen(2);
+          }}
+        >
+          <b className="cursor-pointer uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left">
             Frontend
           </b>
-          <div className="text-sm gap-1 flex flex-wrap max-h-0 lg:overflow-hidden group-hover:max-h-[140px] transition-all duration-500 ease-in-out">
+          <div
+            className={`text-sm gap-1 flex flex-wrap lg:overflow-hidden  transition-all duration-500 ease-in-out ${
+              open === 2 ? stackVariants.open : stackVariants.closed
+            }`}
+          >
             <span className="p-1 w-fit rounded-md">React</span>
             <span className="p-1 w-fit rounded-md">HTML5</span>
             <span className="p-1 w-fit rounded-md">CSS3</span>
@@ -53,11 +89,20 @@ const TechCard = ({ headerValue }) => {
           </div>
         </div>
 
-        <div className="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2">
-          <b className="uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left">
+        <div
+          className="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2"
+          onMouseEnter={() => {
+            toggleOpen(3);
+          }}
+        >
+          <b className="cursor-pointer uppercase pr-2 py-1 w-full border-b hidden lg:block border-b-white text-3xl font-extralight text-left">
             Testing
           </b>
-          <div className="text-sm gap-1 flex flex-wrap max-h-0 lg:overflow-hidden group-hover:max-h-[140px] transition-all duration-500 ease-in-out">
+          <div
+            className={`text-sm gap-1 flex flex-wrap lg:overflow-hidden  transition-all duration-500 ease-in-out ${
+              open === 3 ? stackVariants.open : stackVariants.closed
+            }`}
+          >
             <span className="p-1 w-fit rounded-md">JsUnit</span>
             <span className="p-1 w-fitrounded-md">Junit</span>
             <span className="p-1 w-fit rounded-md">JMeter</span>
