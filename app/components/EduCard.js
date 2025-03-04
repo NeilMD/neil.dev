@@ -47,7 +47,7 @@ const EduCard = ({ headerValue }) => {
         className="-z-10 absolute bottom-[40px] lg:bottom-0 left-0 object-cover scale-175 lg:scale-125 group-hover:scale-163 lg:group-hover:scale-100 transition duration-500 ease-in-out"
         height="240"
         width="580"
-        src="/img/japan_exp.webp"
+        src="/neil.dev/img/japan_exp.webp"
       />
     </div>
   );

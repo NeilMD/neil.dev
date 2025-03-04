@@ -62,7 +62,10 @@ const page = () => {
             threshold={0.2}
           >
             <div className="">
-              <img src="/img/01_screenlist.webp" className="w-full mb-3" />
+              <img
+                src="/neil.dev/img/01_screenlist.webp"
+                className="w-full mb-3"
+              />
               <span className="text-sm italic text-center mb-3">
                 This is a sample documentation of a screen list and its details.
               </span>
@@ -90,7 +93,10 @@ const page = () => {
             threshold={0.2}
           >
             <div>
-              <img src="/img/01_waterfall.webp" className="w-full mb-3" />
+              <img
+                src="/neil.dev/img/01_waterfall.webp"
+                className="w-full mb-3"
+              />
               <span className="text-sm italic text-center mb-3">
                 This is a sample documentation of a report and its contents.
               </span>
@@ -118,7 +124,10 @@ const page = () => {
             threshold={0.2}
           >
             <div>
-              <img src="/img/01_reportcontents.webp" className="w-full mb-3" />
+              <img
+                src="/neil.dev/img/01_reportcontents.webp"
+                className="w-full mb-3"
+              />
               <span className="text-sm italic text-center mb-3">
                 Waterfall Model
               </span>
