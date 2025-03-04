@@ -1,7 +1,7 @@
 "use client";
 const Header = ({ headerValue, setHeaderValue }) => {
   return (
-    <header className="flex items-center p-8 fixed w-full z-10">
+    <header className="flex items-center p-8 fixed w-full z-100">
       <span className="hidden flex-1/3 font-semibold text-lg justify-baseline md:flex">
         <a href="#exp_card">Neil Capistrano</a>
       </span>

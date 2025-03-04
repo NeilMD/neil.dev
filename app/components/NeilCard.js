@@ -43,7 +43,7 @@ const NeilCard = ({ headerValue }) => {
           <img className="w-[100px]" src="/img/neil_programming.webp" />
           <div className="text-2xl font-extralight">
             I'm
-            <span className="font-serif text-3xl font-semibold">Neil</span>, a
+            <span className="font-serif text-3xl font-semibold"> Neil</span>, a
             full-stack developer currently living in <span> </span>
             <span className="text-gray-400 line-through">Philippines</span>,
             <span> </span>
