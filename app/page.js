@@ -2,7 +2,7 @@
 import { useState } from "react";
 
 import BeatCurrent from "./components/BeatCurrent";
-import EduCard from "./components/EduCard";
+import JapanCard from "./components/JapanCard";
 import ExpCard from "./components/ExpCard";
 import Header from "./components/Header";
 import LinkCard from "./components/LinkCard";
@@ -22,7 +22,7 @@ export default function Home() {
           <NeilCard headerValue={headerValue} />
           <NightSparrowCard headerValue={headerValue} />
           <TechCard headerValue={headerValue} />
-          <EduCard headerValue={headerValue} />
+          <JapanCard headerValue={headerValue} />
           <BeatCurrent headerValue={headerValue} />
         </div>
       </main>

@@ -16,7 +16,7 @@ const ProjectApproach = () => {
       </FadeContent>
       <br />
       <div>
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           <FadeContent
             blur={false}
             duration={600}
@@ -44,7 +44,7 @@ const ProjectApproach = () => {
           </FadeContent>
         </div>
         <br />
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           <FadeContent
             blur={false}
             duration={600}
@@ -72,7 +72,7 @@ const ProjectApproach = () => {
           </FadeContent>
         </div>
         <br />
-        <div className="flex gap-8">
+        <div className="flex flex-col md:flex-row gap-8">
           <FadeContent
             blur={false}
             duration={600}

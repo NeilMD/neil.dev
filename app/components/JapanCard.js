@@ -2,7 +2,7 @@
 import { useRouter } from "next/navigation";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-const EduCard = ({ headerValue }) => {
+const JapanCard = ({ headerValue }) => {
   const router = useRouter();
 
   const handleClick = () => {
@@ -20,7 +20,7 @@ const EduCard = ({ headerValue }) => {
     <div
       id="bc_card"
       className={`${cardVariants.base} 
-        ${headerValue === 2 ? cardVariants.inactive : cardVariants.active}`}
+        ${headerValue === 1 ? cardVariants.inactive : cardVariants.active}`}
       onClick={handleClick}
     >
       <div className="opacity-0 group-hover:opacity-70 absolute inset-0  bg-black transition duration-400 ease-in-out"></div>
@@ -53,4 +53,4 @@ const EduCard = ({ headerValue }) => {
   );
 };
 
-export default EduCard;
+export default JapanCard;
