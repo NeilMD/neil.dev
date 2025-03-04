@@ -14,7 +14,7 @@ import AnimatedContent from "@/components/Animations/AnimatedContent/AnimatedCon
 
 const page = () => {
   return (
-    <main className=" min-h-svh w-full flex flex-col justify-center items-center bg-n-bg font-extralight">
+    <main className=" min-h-svh w-full flex flex-col justify-center items-center bg-n-bg font-extralight mt-24">
       <div className="relative max-w-4xl  flex flex-col gap-8">
         <span>
           <FadeContent
@@ -98,7 +98,7 @@ const page = () => {
                 className="w-full mb-3"
               />
               <span className="text-sm italic text-center mb-3">
-                This is a sample documentation of a report and its contents.
+                Waterfall Model
               </span>
               <span className="text-xs block text-center">
                 Picture taken from{" "}
@@ -129,7 +129,7 @@ const page = () => {
                 className="w-full mb-3"
               />
               <span className="text-sm italic text-center mb-3">
-                Waterfall Model
+                This is a sample documentation of a report and its contents.
               </span>
               <span className="text-xs block text-center">
                 Picture taken from{" "}
