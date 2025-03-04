@@ -35,7 +35,7 @@ const NightSparrowCard = ({ headerValue }) => {
         id="button"
         className="absolute m-4 bottom-0 left-0 h-[40px] w-[40px] bg-white rounded-full flex justify-center items-center overflow-hidden group-hover:w-[150px] transition-all duration-400 ease-in-out group-hover:bg-transparent group-hover:text-zinc-300 group-hover:border"
       >
-        <span className="text-nowrap group-hover:inline group-hover:translate-x-0 transition-all duration-400 ease-in-out delay-75 transform -translate-x-full p-2">
+        <span className="text-nowrap group-hover:inline group-hover:translate-x-0 transition-all duration-400 ease-in-out transform -translate-x-full p-2">
           Go to Site
         </span>
         <span className="absolute group-hover:hidden">
