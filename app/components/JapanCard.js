@@ -10,7 +10,7 @@ const JapanCard = ({ headerValue }) => {
   };
 
   const cardVariants = {
-    base: "relative overflow-hidden h-[240px] bg-purple-100 lg:col-span-2 md:col-span-1 col-span-2 order-5 md:order-7 lg:order-7 rounded-4xl px-8 py-12",
+    base: "relative overflow-hidden h-[240px] bg-purple-100 col-span-2 order-5 md:order-6 lg:order-6 rounded-4xl px-8 py-12",
     active:
       "active_card cursor-pointer group drop-shadow-xs transition duration-500 ease-in-out hover:drop-shadow-sm",
     inactive: "inactive_card",
@@ -44,7 +44,7 @@ const JapanCard = ({ headerValue }) => {
         </span>
       </div>
       <img
-        className="-z-10 absolute bottom-[40px] lg:bottom-0 left-0 object-cover scale-175 lg:scale-125 group-hover:scale-163 lg:group-hover:scale-100 transition duration-500 ease-in-out"
+        className="-z-10 absolute bottom-[40px] md:translate-15 lg:translate-0 lg:bottom-0 left-0 object-cover scale-175 lg:scale-125 group-hover:scale-163 lg:group-hover:scale-100 transition duration-500 ease-in-out"
         height="240"
         width="580"
         src="/img/japan_exp.webp"

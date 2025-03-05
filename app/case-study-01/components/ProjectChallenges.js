@@ -11,7 +11,7 @@ const ProjectChallenges = () => {
         easing="ease-out"
         initialOpacity={0}
       >
-        <h4 className="text-5xl font-semibold font-serif mb-3">
+        <h4 className="text-4xl md:text-5xl font-semibold font-serif mb-3">
           Challenges Faced
         </h4>
       </FadeContent>
