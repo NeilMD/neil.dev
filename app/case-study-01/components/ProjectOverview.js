@@ -11,7 +11,9 @@ const ProjectOverview = () => {
         easing="ease-out"
         initialOpacity={0}
       >
-        <h4 className="text-5xl font-semibold font-serif mb-3">Overview</h4>
+        <h4 className="text-4xl md:text-5xl font-semibold font-serif mb-3">
+          Overview
+        </h4>
       </FadeContent>
       <br />
       <FadeContent

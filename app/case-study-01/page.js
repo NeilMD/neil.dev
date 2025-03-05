@@ -25,7 +25,7 @@ const page = () => {
               duration={100}
               easing="ease-out"
               initialOpacity={0}
-              className="text-3xl -mb-6 font-mono font-light "
+              className="text-2xl md:text-3xl -mb-6 font-mono font-light "
             >
               Case Study 01{" "}
             </FadeContent>
@@ -36,7 +36,7 @@ const page = () => {
             easing="ease-out"
             initialOpacity={0}
           >
-            <h2 className="text-6xl font-serif font-semibold mb-6  ">
+            <h2 className="text-4xl md:text-6xl font-serif font-semibold mb-6  ">
               Overcoming Challenges as a Software Engineer in a Major Japanese
               Bank
             </h2>
