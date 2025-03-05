@@ -12,6 +12,7 @@ const Header = ({ headerValue, setHeaderValue }) => {
         pathname === "/" ? "lg:max-w-[1296px]" : "lg:max-w-[900px]"
       }`}
     >
+      <div className="absolute top-0 left-0 bg-white inset-0 inset-x-10 w-full blur-3xl -z-10"></div>
       <span className="hidden flex-1/3 text-stone-800 font-light  text-xl  justify-baseline md:flex">
         <a href="#exp_card">Neil Capistrano</a>
       </span>
