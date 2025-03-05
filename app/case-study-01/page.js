@@ -59,7 +59,7 @@ const page = () => {
               direction="vertical"
               reverse={false}
               config={{ tension: 80, friction: 20 }}
-              initialOpacity={0.2}
+              initialOpacity={0.0}
               animateOpacity
               className="col-span-3  px-4 py-8 rounded-2xl bg-stone-50 shadow-2xl text-center z-10"
               threshold={0.2}
@@ -91,7 +91,7 @@ const page = () => {
               direction="vertical"
               reverse={false}
               config={{ tension: 80, friction: 20 }}
-              initialOpacity={0.2}
+              initialOpacity={0.0}
               animateOpacity
               className="col-start-1 col-span-3  md:col-span-1  px-4 py-8 rounded-2xl bg-stone-50 shadow-2xl text-center z-10"
               threshold={0.2}
@@ -122,7 +122,7 @@ const page = () => {
               direction="vertical"
               reverse={false}
               config={{ tension: 80, friction: 20 }}
-              initialOpacity={0.2}
+              initialOpacity={0.0}
               animateOpacity
               className="col-start-1 md:col-start-2 col-span-3  md:col-span-2  px-4 py-8 rounded-2xl bg-stone-50 shadow-2xl text-center z-10"
               threshold={0.2}
