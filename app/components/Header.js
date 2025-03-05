@@ -12,7 +12,7 @@ const Header = ({ headerValue, setHeaderValue }) => {
         pathname === "/" ? "lg:max-w-[1296px]" : "lg:max-w-[900px]"
       }`}
     >
-      <span className="hidden flex-1/3 font-semibold text-lg justify-baseline md:flex">
+      <span className="hidden flex-1/3 text-stone-800 font-light  text-xl  justify-baseline md:flex">
         <a href="#exp_card">Neil Capistrano</a>
       </span>
       <nav className="flex-1/3 flex justify-center opacity-65">
@@ -35,7 +35,7 @@ const Header = ({ headerValue, setHeaderValue }) => {
           )}
         </ul>
       </nav>
-      <span className="hidden md:flex flex-1/3 font-semibold text-lg justify-end">
+      <span className="hidden text-stone-800 font-light  text-xl md:flex flex-1/3  justify-end">
         <a href="mailto:neil.capistrano2007.ca@gmail.com">Contact Me</a>
       </span>
     </header>
