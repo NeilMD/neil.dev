@@ -18,7 +18,7 @@ const page = () => {
     <div className="relative">
       <Header headerValue={0} setHeaderValue={() => {}} />
       <main className=" min-h-svh w-full flex flex-col justify-center items-center bg-n-bg font-extralight mt-24 px-8">
-        <div className="relative  lg:w-[1296px]  flex flex-col gap-8">
+        <div className="relative  lg:w-[900px]  flex flex-col gap-8">
           <span>
             <FadeContent
               blur={true}

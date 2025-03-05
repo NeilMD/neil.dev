@@ -7,7 +7,11 @@ const Header = ({ headerValue, setHeaderValue }) => {
   const pathname = usePathname();
   console.log(pathname);
   return (
-    <header className="flex items-center px-8 lg:px-0 py-8 fixed w-full lg:max-w-[1296px] z-100 top-0 left-[50%] -translate-x-[50%]">
+    <header
+      className={`flex items-center px-8 lg:px-0 py-8 fixed w-full z-100 top-0 left-[50%] -translate-x-[50%] ${
+        pathname === "/" ? "lg:max-w-[1296px]" : "lg:max-w-[900px]"
+      }`}
+    >
       <span className="hidden flex-1/3 font-semibold text-lg justify-baseline md:flex">
         <a href="#exp_card">Neil Capistrano</a>
       </span>
@@ -90,7 +94,7 @@ const ReturnHeader = ({ headerValue, setHeaderValue }) => {
           setHeaderValue(3);
         }}
       >
-        <Link href="/">Go Back Home</Link>
+        <Link href="/"> Return to Home</Link>
       </li>
     </>
   );
