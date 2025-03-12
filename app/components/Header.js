@@ -14,7 +14,7 @@ const Header = ({ headerValue, setHeaderValue }) => {
     >
       <div className="absolute top-0 left-0 bg-white inset-0 inset-y-7 w-full blur-2xl -z-10"></div>
       <span className="hidden flex-1/3 text-stone-800 font-light  text-xl  justify-baseline md:flex">
-        <a href="#exp_card">Neil Capistrano</a>
+        <Link href="/"> Neil Capistrano</Link>
       </span>
       <nav className="flex-1/3 flex justify-center opacity-65">
         <ul className="relative flex gap-4 self-center px-4 py-2 bg-transparent rounded-full">
