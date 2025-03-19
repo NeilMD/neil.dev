@@ -12,7 +12,7 @@ const TechCard = ({ headerValue }) => {
     inactive: "inactive_card",
   };
   const stackVariants = {
-    open: "max-h-[140px]",
+    open: "max-h-[150px]",
     closed: "max-h-0",
   };
   const [open, setOpen] = useState(0);
@@ -44,7 +44,7 @@ const TechCard = ({ headerValue }) => {
           Tech Stack
         </h2>
         <div
-          className="group cursor-pointer flex-[40%] flex flex-col text-left gap-2 mb-2"
+          className="group cursor-pointer flex-[40%] flex flex-col text-left gap-2 mb-4"
           onMouseEnter={() => {
             toggleOpen(1);
           }}
@@ -57,10 +57,13 @@ const TechCard = ({ headerValue }) => {
               open === 1 ? stackVariants.open : stackVariants.closed
             }`}
           >
+            <span className="p-1 w-fit rounded-md">ExpressJS</span>
+            <span className="p-1 w-fit rounded-md">NextJS</span>
+            <span className="p-1 w-fit rounded-md">Laravel</span>
             <span className="p-1 w-fit rounded-md">Javascript</span>
             <span className="p-1 w-fit rounded-md">Java</span>
             <span className="p-1 w-fit rounded-md">Python</span>
-            <span className="p-1 w-fit rounded-md">ExpressJS</span>
+            <span className="p-1 w-fit rounded-md">PHP</span>
             <span className="p-1 w-fit rounded-md">NodeJS</span>
             <span className="p-1 w-fit rounded-md">PostgreSQL</span>
             <span className="p-1 w-fit rounded-md">MySQL</span>
@@ -68,7 +71,7 @@ const TechCard = ({ headerValue }) => {
           </div>
         </div>
         <div
-          className="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2"
+          className="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-4"
           onMouseEnter={() => {
             toggleOpen(2);
           }}
@@ -85,12 +88,12 @@ const TechCard = ({ headerValue }) => {
             <span className="p-1 w-fit rounded-md">HTML5</span>
             <span className="p-1 w-fit rounded-md">CSS3</span>
             <span className="p-1 w-fit rounded-md">JQuery</span>
-            <span className="p-1 w-fit rounded-md">Tailwind</span>
+            <span className="p-1 w-fit rounded-md">TailwindCSS</span>
           </div>
         </div>
 
         <div
-          className="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-2"
+          className="group cursor-pointer flex-[30%] flex flex-col text-left gap-2 mb-4"
           onMouseEnter={() => {
             toggleOpen(3);
           }}
@@ -121,15 +124,18 @@ const TechCard = ({ headerValue }) => {
           />
           Tech Stack
         </h2>
-
+        <span className="p-1 w-fit rounded-md">ExpressJS</span>
+        <span className="p-1 w-fit rounded-md">NextJS</span>
+        <span className="p-1 w-fit rounded-md">Laravel</span>
         <span className="p-1 w-fit rounded-md">Javascript</span>
         <span className="p-1 w-fit rounded-md">Java</span>
         <span className="p-1 w-fit rounded-md">Python</span>
-        <span className="p-1 min-w-fit rounded-md">ExpressJS</span>
+        <span className="p-1 w-fit rounded-md">PHP</span>
         <span className="p-1 w-fit rounded-md">NodeJS</span>
         <span className="p-1 w-fit rounded-md">PostgreSQL</span>
         <span className="p-1 w-fit rounded-md">MySQL</span>
         <span className="p-1 w-fit rounded-md">Bash Scripting</span>
+
         <span className="p-1 w-fit rounded-md">React</span>
         <span className="p-1 w-fit rounded-md">HTML5</span>
         <span className="p-1 w-fit rounded-md">CSS3</span>
