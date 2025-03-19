@@ -12,14 +12,14 @@ const Header = ({ headerValue, setHeaderValue }) => {
         pathname === "/" ? "lg:max-w-[1296px]" : "lg:max-w-[900px]"
       }`}
     >
-      <div className="absolute top-0 left-0 bg-white inset-0 inset-y-7 w-full blur-2xl -z-10"></div>
+      <div className="absolute top-0 left-0 bg-white inset-y-1/4 w-full blur-[40px] opacity-40 -z-10"></div>
       <span className="hidden flex-1/3 text-stone-800 font-light  text-xl  justify-baseline md:flex">
         <Link href="/"> Neil Capistrano</Link>
       </span>
       <nav className="flex-1/3 flex justify-center opacity-65">
         <ul className="relative flex gap-4 self-center px-4 py-2 bg-transparent rounded-full">
           <div
-            className={`-z-10 absolute inset-0 opacity-90  rounded-full ${
+            className={`-z-10 absolute inset-0 opacity-95  rounded-full ${
               pathname === "/" ? "bg-n-bg" : "bg-stone-300"
             }`}
           ></div>
