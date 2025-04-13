@@ -26,7 +26,7 @@ const PortfolioPortalCard = ({ headerValue }) => {
         className="absolute bottom-[-200px] right-[-10px] lg:inset-0 object-cover scale-90 lg:scale-125 group-hover:scale-100 transition duration-500 ease-in-out"
         height="580"
         width="240"
-        src="/img/portfolio_portal.webp"
+        src="/neil.dev/img/portfolio_portal.webp"
       />
       <div className="opacity-0 group-hover:opacity-70 absolute inset-0  bg-black transition duration-400 ease-in-out"></div>
       <div

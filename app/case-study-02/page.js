@@ -73,7 +73,7 @@ const page = () => {
               <div className="">
                 <video
                   className="aspect-video w-full mb-3"
-                  src="/video/phase3_react_integ.webm"
+                  src="/neil.dev/video/phase3_react_integ.webm"
                   autoPlay
                   muted
                   controls
