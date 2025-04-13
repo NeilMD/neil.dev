@@ -9,6 +9,7 @@ import LinkCard from "./components/LinkCard";
 import NeilCard from "./components/NeilCard";
 import NightSparrowCard from "./components/NightSparrowCard";
 import TechCard from "./components/TechCard";
+import PortfolioPortalCard from "./components/PortfolioPortalCard";
 
 export default function Home() {
   const [headerValue, setHeaderValue] = useState(0);
@@ -20,7 +21,7 @@ export default function Home() {
           <ExpCard headerValue={headerValue} />
           <LinkCard headerValue={headerValue} />
           <NeilCard headerValue={headerValue} />
-          <NightSparrowCard headerValue={headerValue} />
+          <PortfolioPortalCard headerValue={headerValue} />
           <TechCard headerValue={headerValue} />
           <JapanCard headerValue={headerValue} />
           <BeatCurrent headerValue={headerValue} />
