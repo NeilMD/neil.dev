@@ -61,7 +61,7 @@ const ProjectChallenges = () => {
         <p className="text-justify text-black mb-2">
           Ensuring that different API endpoints were properly guarded with user
           roles (admin, user, guest, etc.) required a centralized, maintainable
-          approach. Spaghetti access-control logic was not an option—we needed
+          approach. Spaghetti access-control logic was not an option, I needed
           scalability for future endpoint expansion.
         </p>
       </FadeContent>

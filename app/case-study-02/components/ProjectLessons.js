@@ -35,7 +35,7 @@ const ProjectLessons = () => {
           One challenge was deciding where to store tokens to maximize security
           without frustrating the user.{" "}
           <span className="text-black text-md italic font-light">
-            We opted for storing JWT tokens in the Authorization header and
+            I opted for storing JWT tokens in the Authorization header and
             refresh tokens in HttpOnly cookies
           </span>
           , providing secure storage while maintaining smooth session continuity
@@ -66,10 +66,9 @@ const ProjectLessons = () => {
           role-based access. Since the application has relatively simple
           functionality,{" "}
           <span className="text-black text-md italic font-light">
-            we opted for route-level protection. This simplified implementation,
-            but we acknowledged the trade-off of not having more granular
-            control over specific actions (e.g., read, write, delete) within a
-            route.{" "}
+            I opted for route-level protection. This simplified implementation,
+            but I acknowledged the trade-off of not having more granular control
+            over specific actions (e.g., read, write, delete) within a route.{" "}
           </span>
           For now, this structure meets the project’s needs, but future
           iterations might require more detailed access control mechanisms.
@@ -99,13 +98,13 @@ const ProjectLessons = () => {
             Storing refresh tokens in HttpOnly cookies provided additional
             security but added complexity to the token refresh process.{" "}
           </span>
-          We had to ensure that the token refresh process was smooth and
-          seamless for the user to avoid session interruptions.{" "}
+          I had to ensure that the token refresh process was smooth and seamless
+          for the user to avoid session interruptions.{" "}
         </p>
         <p className="text-zinc-400 mb-2">
           Ultimately, these challenges led us to make design choices that
           emphasized security while maintaining a positive user experience. In
-          future projects, we may consider more granular role-based permissions
+          future projects, I may consider more granular role-based permissions
           and explore further enhancements to session management.
         </p>
       </FadeContent>

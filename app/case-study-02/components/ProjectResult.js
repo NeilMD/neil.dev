@@ -15,7 +15,7 @@ const ProjectResult = () => {
           Result
         </h4>
         <p className="text-zinc-800">
-          To ensure secure and seamless user authentication, we implemented a
+          To ensure secure and seamless user authentication, I implemented a
           hybrid system combining JWT-based authentication and Google OAuth 2.0
           via Auth0/Passport.js.
         </p>
@@ -103,9 +103,8 @@ const ProjectResult = () => {
           </li>
           <li>
             <span className="font-semibold text-black">Token Handling: </span>
-            After authentication, we generate a JWT token for session
-            management, sent in the Authorization header for subsequent
-            requests.
+            After authentication, I generate a JWT token for session management,
+            sent in the Authorization header for subsequent requests.
           </li>
         </ul>
         <p>
