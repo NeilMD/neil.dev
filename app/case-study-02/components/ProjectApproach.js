@@ -87,11 +87,13 @@ const ProjectApproach = () => {
               ensure maintainability and cleaner collaboration for future
               developers.
             </p>
-            <CodeBlock
-              language="javascript"
-              filename="Folder Configuration "
-              code={folderStructure}
-            />
+            <div className=" w-[240px] sm:w-full">
+              <CodeBlock
+                language="javascript"
+                filename="Folder Configuration "
+                code={folderStructure}
+              />
+            </div>
           </FadeContent>
         </div>
         <br />
@@ -115,11 +117,13 @@ const ProjectApproach = () => {
             <p className="mb-2">
               I implemented a detailed logging system to trace every request:
             </p>
-            <CodeBlock
-              language="javascript"
-              filename="Sample Login Logs"
-              code={logger}
-            />
+            <div className=" w-[240px] sm:w-full">
+              <CodeBlock
+                language="javascript"
+                filename="Sample Login Logs"
+                code={logger}
+              />
+            </div>
             <p className="mt-2">
               This helped me trace execution flow and detect issues quickly.
             </p>
@@ -148,11 +152,13 @@ const ProjectApproach = () => {
               file. This allowed mapping specific API endpoints and HTTP methods
               to roles, simplifying the process of managing who could do what.
             </p>
-            <CodeBlock
-              language="javascript"
-              filename="RBAC Configuration "
-              code={configRbac}
-            />
+            <div className=" w-[240px] sm:w-full">
+              <CodeBlock
+                language="javascript"
+                filename="RBAC Configuration "
+                code={configRbac}
+              />
+            </div>
           </FadeContent>
         </div>
         <br />
