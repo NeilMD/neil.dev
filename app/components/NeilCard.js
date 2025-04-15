@@ -53,7 +53,7 @@ const NeilCard = ({ headerValue }) => {
             <span className="text-gray-400 line-through">Philippines</span>,
             <span> </span>
             <span className="text-gray-400 line-through">Japan</span>, Canada. I
-            built and develop web solutions for a<span> </span>
+            built and developed web solutions for a<span> </span>
             <span className="italic underline">major bank</span> and a
             <span> </span>
             <span className="italic underline">love hotel chain</span> in Japan,
